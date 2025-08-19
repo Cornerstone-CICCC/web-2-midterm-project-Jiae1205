@@ -1,0 +1,285 @@
+// LIGHT MODE
+body.light-mode {
+  background-color: #D9D9D9;
+  color: #121212;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .75rem;
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      background-color: #FF43A4;
+      border-radius: 50%;
+      img {
+        width: 3rem;
+        height: 3rem;
+        padding: .75rem;
+      }
+    }
+    .header_nav {
+      background-color: #FF84C4;
+      border-radius: 1.5rem;
+      padding-left: 1rem;
+      padding-right: .5rem;
+      opacity: .5;
+      min-height: 3rem;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header_nav_list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: .75rem;
+        font-size: 1rem;
+        justify-content: space-evenly;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: color 0.2s, font-weight 0.2s;
+          color: inherit;
+          font-weight: normal;
+          background: none;
+          img {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin: 0;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+          &:hover {
+            color: #00BE2C;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+          }
+          input[type="text"] {
+            width: 10rem;
+            padding: .5rem 1rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 1rem;
+            color: #121212;
+            outline: none;
+            background: transparent;
+          }
+          input[type="text"]:focus {
+            background: transparent;
+            box-shadow: 0 4px 12px rgba(0,190,44,0.14);
+          }
+          button {
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: #FF84C4;
+            color: #fff;
+            font-size: .95rem;
+            cursor: pointer;
+            margin-left: .5rem;
+            transition: background .2s;
+          }
+          button:hover {
+            background-color: #FF43A4;
+            color: #fff;
+          }
+        }
+      }
+      // 검색 모드일 때 중앙 정렬
+      .search_mode {
+        justify-content: center;
+        gap: .75rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+      margin: 1.25rem;
+      .logo {
+        width: 5rem;
+        height: 5rem;
+        background-color: #FF43A4;
+        img {
+          width: 5rem;
+          height: 5rem;
+          padding: 1.25rem;
+        }
+      }
+      .header_nav {
+        min-height: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        .header_nav_list {
+          font-size: 1.5rem;
+          gap: 1.5rem;
+          li {
+            input[type="text"] {
+              width: 16rem;
+              font-size: 1.2rem;
+            }
+            button {
+              font-size: 1.1rem;
+              padding: .7rem 1.5rem;
+              margin-left: 1rem;
+            }
+          }
+        }
+        .search_mode {
+          justify-content: center;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// DARK MODE
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .75rem;
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      background-color: #1BFF54;
+      border-radius: 50%;
+      img {
+        width: 3rem;
+        height: 3rem;
+        padding: .75rem;
+      }
+    }
+    .header_nav {
+      background-color: #1BFF54;
+      color: #121212;
+      border-radius: 1.5rem;
+      padding-left: 1rem;
+      padding-right: .5rem;
+      opacity: .5;
+      min-height: 3rem;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .header_nav_list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: .75rem;
+        font-size: 1rem;
+        justify-content: space-evenly;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #121212;
+          font-weight: normal;
+          background: none;
+          img {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin: 0;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+          &:hover {
+            color: #FF84C4;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+          }
+          input[type="text"] {
+            width: 10rem;
+            padding: .5rem 1rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 1rem;
+            color: #E0E0E0;
+            outline: none;
+            background: transparent;
+          }
+          input[type="text"]:focus {
+            background: transparent;
+          }
+          button {
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: #1BFF54;
+            color: #fff;
+            font-size: .95rem;
+            cursor: pointer;
+            margin-left: .5rem;
+            transition: background .2s;
+          }
+          button:hover {
+            background-color: #00BE2C;
+          }
+        }
+      }
+      .search_mode {
+        justify-content: center;
+        gap: .75rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+      margin: 1.25rem;
+      .logo {
+        width: 5rem;
+        height: 5rem;
+        background-color: #00BE2C;
+        img {
+          width: 5rem;
+          height: 5rem;
+          padding: 1.25rem;
+        }
+      }
+      .header_nav {
+        min-height: 4rem;
+        .header_nav_list {
+          font-size: 1.5rem;
+          gap: 1.5rem;
+          li {
+            input[type="text"] {
+              width: 16rem;
+              font-size: 1.2rem;
+            }
+            button {
+              font-size: 1.1rem;
+              padding: .7rem 1.5rem;
+              margin-left: 1rem;
+            }
+          }
+        }
+        .search_mode {
+          justify-content: center;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}

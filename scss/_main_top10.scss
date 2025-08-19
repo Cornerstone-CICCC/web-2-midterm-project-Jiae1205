@@ -1,0 +1,539 @@
+// // LIGHT MODE
+// body.light-mode {
+
+//   .top {
+//     overflow: hidden;
+//     padding: 1rem;
+
+//     .top_list {
+//       display: flex;
+//       gap: 1rem;
+//       transition: transform .5s ease;
+//       will-change: transform;
+
+//       li {
+//         flex: 0 0 80%; // 모바일 한 장씩
+//         flex-wrap: wrap;
+//         position: relative;
+//         overflow: hidden;
+
+//         img {
+//           width: 100%;
+//           height: 35rem;
+//           border-radius: 1rem;        
+//           display: block;
+//           object-fit: cover; // 이미지 비율 유지하며 박스에 맞춤
+//         }
+
+//         .movie_info {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           gap: .5rem;
+//           text-align: center;
+//           margin-top: .5rem;
+
+//           p {
+//             margin: 0;
+//             color: #121212;
+//             font-size: .9rem;
+//           }
+
+//           .movie_title {
+//             font-weight: bold;
+//             font-size: 1.5rem;
+//           }
+
+//           .movie_rating {
+//             font-size: 1rem;
+//             color: #00BE2C;
+//           }
+//         }
+
+//         .ranks {
+//           position: absolute;
+//           top: .5rem;
+//           left: .5rem;
+//           background-color: #FF84C4;
+//           color: #121212;
+//           padding: .25rem .5rem;
+//           border-radius: 45px;
+//           font-size: 1.5rem;
+//           font-weight: bold;
+//         }
+//       }
+//     }
+//   }
+
+//   h2 {
+//     font-size: 2rem;
+//     margin-left: 1rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   @media screen and (min-width: 768px) {
+
+//     .top {
+//       overflow: hidden;
+//       padding: 1rem;
+
+//       .top_list {
+//         display: flex;
+//         gap: 1.5rem;
+//         transition: transform .5s ease;
+//         will-change: transform;
+
+//         li {
+//           min-width: calc(50% - 1rem);
+//           flex-wrap: wrap;
+//           position: relative;
+//           overflow: hidden;
+
+//           img {
+//             width: auto;
+//             height: 35rem;
+//             border-radius: 1rem;        
+//             display: block;
+//             object-fit: cover; // 이미지 비율 유지하며 박스에 맞춤
+//           }
+
+//           .movie_info {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             gap: .5rem;
+//             text-align: center;
+//             margin-top: .5rem;
+
+//             p {
+//               margin: 0;
+//               color: #121212;
+//               font-size: .9rem;
+//             }
+
+//             .movie_title {
+//               font-weight: bold;
+//               font-size: 1.5rem;
+//             }
+
+//             .movie_rating {
+//               font-size: 1rem;
+//               color: #00BE2C;
+//             }
+//           }
+
+//           .ranks {
+//             position: absolute;
+//             top: .5rem;
+//             left: .5rem;
+//             background-color: #FF84C4;
+//             color: #121212;
+//             padding: .25rem .5rem;
+//             border-radius: 45px;
+//             font-size: 1.5rem;
+//             font-weight: bold;
+//           }
+//         }
+//       }
+//     }
+//     h2 {
+//       font-size: 2rem;
+//       margin-left: 1rem;
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
+
+
+
+
+// // DARK MODE
+// body.dark-mode {
+//   .top {
+//     overflow: hidden;
+//     padding: 1rem;
+
+//     .top_list {
+//       display: flex;
+//       gap: 1rem;
+//       transition: transform .5s ease;
+//       will-change: transform;
+
+//       li {
+//         flex: 0 0 80%; // 모바일 한 장씩
+//         flex-wrap: wrap;
+//         position: relative;
+//         overflow: hidden;
+
+//         img {
+//           width: 100%;
+//           height: 35rem;
+//           border-radius: 1rem;        
+//           display: block;
+//           object-fit: cover; // 이미지 비율 유지하며 박스에 맞춤
+//         }
+
+//         .movie_info {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           gap: .5rem;
+//           text-align: center;
+//           margin-top: .5rem;
+
+//           p {
+//             margin: 0;
+//             color: #E0E0E0;
+//             font-size: .9rem;
+//           }
+
+//           .movie_title {
+//             font-weight: bold;
+//             font-size: 1.5rem;
+//           }
+
+//           .movie_rating {
+//             font-size: 1rem;
+//             color: #FF43A4;
+//           }
+//         }
+
+//         .ranks {
+//           position: absolute;
+//           top: .5rem;
+//           left: .5rem;
+//           background-color: #1BFF54;
+//           color: #121212;
+//           padding: .25rem .5rem;
+//           border-radius: 45px;
+//           font-size: 1.5rem;
+//           font-weight: bold;
+//         }
+//       }
+//     }
+//   }
+
+//   h2 {
+//     font-size: 2rem;
+//     margin-left: 1rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   @media screen and (min-width: 768px) {
+
+//     .top {
+//       overflow: hidden;
+//       padding: 1rem;
+
+//       .top_list {
+//         display: flex;
+//         gap: 1.5rem;
+//         transition: transform .5s ease;
+//         will-change: transform;
+
+//         li {
+//           min-width: calc(50% - 1rem);
+//           flex-wrap: wrap;
+//           position: relative;
+//           overflow: hidden;
+
+//           img {
+//             width: auto;
+//             height: 35rem;
+//             border-radius: 1rem;        
+//             display: block;
+//             object-fit: cover; // 이미지 비율 유지하며 박스에 맞춤
+//           }
+
+//           .movie_info {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             gap: .5rem;
+//             text-align: center;
+//             margin-top: .5rem;
+
+//             p {
+//               margin: 0;
+//               color: #E0E0E0;
+//               font-size: .9rem;
+//             }
+
+//             .movie_title {
+//               font-weight: bold;
+//               font-size: 1.5rem;
+//             }
+
+//             .movie_rating {
+//               font-size: 1rem;
+//               color: #00BE2C;
+//             }
+//           }
+
+//           .ranks {
+//             position: absolute;
+//             top: .5rem;
+//             left: .5rem;
+//             background-color: #1BFF54;
+//             color: #121212;
+//             padding: .25rem .5rem;
+//             border-radius: 45px;
+//             font-size: 1.5rem;
+//             font-weight: bold;
+//           }
+//         }
+//       }
+//     }
+
+//     h2 {
+//       font-size: 2rem;
+//       margin-left: 1rem;
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
+
+
+// LIGHT MODE
+body.light-mode {
+  .top {
+    overflow: hidden;
+    padding: 1rem;
+
+    .top_list {
+      display: flex;
+      gap: 1rem;
+      transition: transform 0.5s ease;
+      will-change: transform;
+      white-space: nowrap; // 추가 - 줄바꿈 방지
+
+      li {
+        flex: 0 0 80%; // 모바일 한 장씩
+        position: relative;
+        overflow: hidden;
+        /* flex-wrap 제거 권장 */
+
+        img {
+          width: 100%;
+          height: 35rem;
+          border-radius: 1rem;
+          display: block;
+          object-fit: cover;
+        }
+
+        .movie_info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          text-align: center;
+          margin-top: 0.5rem;
+
+          p {
+            margin: 0;
+            color: #121212;
+            font-size: 0.9rem;
+          }
+
+          .movie_title {
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+
+          .movie_rating {
+            font-size: 1rem;
+            color: #00BE2C;
+          }
+        }
+
+        .ranks {
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+          background-color: #ff84c4;
+          color: #121212;
+          padding: 0.25rem 0.5rem;
+          border-radius: 45px;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .top {
+      overflow: hidden;
+      padding: 1rem;
+
+      .top_list {
+        gap: 1.5rem;
+        white-space: normal; // 데스크톱에서는 줄바꿈 허용 (한 줄씩 배열이 아닌 2열 등)
+
+        li {
+          min-width: calc(50% - 1rem);
+          position: relative;
+          overflow: hidden;
+          /* flex-wrap 제거 권장 */
+
+          img {
+            width: auto;
+            height: 35rem;
+            border-radius: 1rem;
+            display: block;
+            object-fit: cover;
+          }
+
+          .movie_info {
+            p {
+              color: #121212;
+              font-size: 0.9rem;
+            }
+
+            .movie_rating {
+              color: #00BE2C;
+            }
+          }
+
+          .ranks {
+            background-color: #ff84c4;
+            color: #121212;
+          }
+        }
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// DARK MODE
+body.dark-mode {
+  .top {
+    overflow: hidden;
+    padding: 1rem;
+
+    .top_list {
+      display: flex;
+      gap: 1rem;
+      transition: transform 0.5s ease;
+      will-change: transform;
+      white-space: nowrap;
+
+      li {
+        flex: 0 0 80%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 35rem;
+          border-radius: 1rem;
+          display: block;
+          object-fit: cover;
+        }
+
+        .movie_info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          text-align: center;
+          margin-top: 0.5rem;
+
+          p {
+            margin: 0;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+          }
+
+          .movie_title {
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+
+          .movie_rating {
+            font-size: 1rem;
+            color: #ff43a4;
+          }
+        }
+
+        .ranks {
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+          background-color: #1bff54;
+          color: #121212;
+          padding: 0.25rem 0.5rem;
+          border-radius: 45px;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .top {
+      overflow: hidden;
+      padding: 1rem;
+
+      .top_list {
+        gap: 1.5rem;
+        white-space: normal;
+
+        li {
+          min-width: calc(50% - 1rem);
+          position: relative;
+          overflow: hidden;
+
+          img {
+            width: auto;
+            height: 35rem;
+            border-radius: 1rem;
+            display: block;
+            object-fit: cover;
+          }
+
+          .movie_info {
+            p {
+              color: #e0e0e0;
+              font-size: 0.9rem;
+            }
+
+            .movie_rating {
+              color: #00BE2C;
+            }
+          }
+
+          .ranks {
+            background-color: #1bff54;
+            color: #121212;
+          }
+        }
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
