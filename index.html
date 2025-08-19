@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieNight</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo.png" alt="logo">
+    </div>
+    <!-- 네비게이션 + 검색창 둘 다 header_nav 동일 구조 -->
+    <nav class="header_nav" id="mainNav">
+      <ul class="header_nav_list" id="navList">
+        <li>MOVIES</li>
+        <li>SERIES</li>
+        <li>ABOUT</li>
+        <li>
+          <img src="./images/search.png" alt="search_icon" />
+        </li>
+      </ul>
+      <ul class="header_nav_list search_mode" id="searchList" style="display: none;">
+        <li>
+          <input type="text" id="searchInput" placeholder="Search movies..." autocomplete="off" />
+        </li>
+        <li>
+          <button id="searchCloseBtn">X</button>
+        </li>
+      </ul>
+    </nav>
+
+    <label class="switch_btn">
+      <input type="checkbox" id="modeToggle">
+      <span class="onoff-switch"></span>
+    </label>
+  </header>
+
+  <main>
+    <div class="top">
+      <ul class="top_list"></ul>
+    </div>
+    <section>
+      <h2 class="Now">Now Watching</h2>
+      <ul class="Now_list"></ul>
+    </section>
+    <section>
+      <h2 class="Recommend">Recommendations</h2>
+      <ul class="Recommend_list"></ul>
+    </section>
+    <section>
+      <h2 class="Upcome">Upcoming</h2>
+      <ul class="Upcome_list"></ul>
+    </section>
+
+    <!-- 🟢 ABOUT 섹션 (기본은 숨김) -->
+    <section class="About_section" style="display:none;">
+      <h2>About MovieNight</h2>
+      <p>
+        MovieNight is a demo project powered by TMDB API.  
+        Browse movies, series, and more!  
+      </p>
+    </section>
+
+    <!-- 🟢 Series 섹션 (기본은 숨김) -->
+    <section class="Series_section" style="display:none;">
+      <div class="top_series">
+        <ul class="top_series_list"></ul>
+      </div>
+      <section class="Now_series">
+        <ul class="Now_series_list"></ul>
+      </section>
+      <section class="Recommend_series">
+        <ul class="Recommend_series_list"></ul>
+      </section>
+      <section class="Upcome_series">
+        <ul class="Upcome_series_list"></ul>
+      </section>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movie Night</p>
+    <ul class="footer_ul">
+      <li class="about">About Us</li>
+      <li class="privacy">Privacy Policy</li>
+      <li class="tmdb">Powered by TMDB</li>
+      <li class="git">GitHub</li>
+    </ul>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
